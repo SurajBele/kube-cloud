@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: spiderpod
+  labels:
+    name: spiderpod
+spec:
+  containers:
+  - name: spiderman
+    image: httpd
+    ports:
+      - containerPort: 80
