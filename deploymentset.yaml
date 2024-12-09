@@ -20,7 +20,7 @@ spec:
         app: myapp-2
     spec:
       containers:
-        - name: mynginx
-          image: nginx
+        - name: myhttpd
+          image: httpd
           ports:
           - containerPort: 80
