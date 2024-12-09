@@ -1,24 +1,24 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
-  name: myreplicaset
+  name: mydeploy
   labels:
-    app: myapp
+    app: myapp-2
     key: value
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: myapp
+      app: myapp-2
     matchExpressions:
-    - {key: app, operator: In, values: [myapp] }
+    - {key: app, operator: In, values: [myapp-2] }
   template:
     metadata:
       labels:
-        app: myapp
+        app: myapp-2
     spec:
       containers:
-        - name: myhttpd
-          image: httpd
+        - name: mynginx
+          image: nginx
           ports:
           - containerPort: 80
