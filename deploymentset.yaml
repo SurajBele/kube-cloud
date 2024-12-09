@@ -11,9 +11,6 @@ spec:
   #   type: Recreate
   strategy:
     type: RollingUpdate
-    rollingUpdate:
-      maxSurge: 3
-      maxUnavailable: 1
   selector:
     matchLabels:
       app: myapp-2
@@ -26,6 +23,6 @@ spec:
     spec:
       containers:
         - name: mynginx
-          image: nginx
+          image: httpd
           ports:
           - containerPort: 80
