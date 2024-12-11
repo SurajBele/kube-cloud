@@ -5,7 +5,7 @@ metadata:
   labels:
     name: my-app
 spec:
-  volume: 
+  volumes: 
    - name: my-pvolume
      persistentVolumeClaim:
       claimName: mypvclaim
