@@ -6,7 +6,7 @@ metadata:
     name: my-app
 spec:
   volumes: 
-   - name: my-pvolume
+   - name: my-persistent-volume
      persistentVolumeClaim:
       claimName: mypvclaim
 
@@ -16,6 +16,6 @@ spec:
     ports:
       - containerPort: 80
     volumeMounts:
-    - name: mypvclaim
+    - name: my-persistent-volume
       mountPath: /usr/local/apache2/
 
