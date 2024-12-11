@@ -26,7 +26,8 @@ spec:
           - name: MYSQL_ROOT_PASSWORD
           #  value: admin123
             valueFrom:
-              configMapKeyRef:
-                name: my-variables
-                key: password
+              # configMapKeyRef:
+              #   name: my-variables
+              #   key: password
+              secretKeyRef:
                 

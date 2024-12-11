@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-app
+  labels:
+    name: my-app
+spec:
+  volume: 
+   - name: my-pvolume
+     persistentVolumeClaim:
+      claimName: mypvclaim
+
+  containers:
+  - name: my-app
+    image: httpd
+    ports:
+      - containerPort: 80
+  volumeMounts:
+   - name: mypvclaim
+     mountPath: /usr/local/apache2/
+
