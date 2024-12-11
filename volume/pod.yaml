@@ -15,7 +15,7 @@ spec:
     image: httpd
     ports:
       - containerPort: 80
-  volumeMounts:
-   - name: mypvclaim
-     mountPath: /usr/local/apache2/
+    volumeMounts:
+    - name: mypvclaim
+      mountPath: /usr/local/apache2/
 
