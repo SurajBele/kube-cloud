@@ -15,3 +15,10 @@
 * configMap
 * secret
 * HPA
+```shell
+kubectl api-resource #for the complete objects info with versions 
+kubectl cluster-info #to know the cluster details
+
+```
+
+
