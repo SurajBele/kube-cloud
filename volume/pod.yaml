@@ -10,7 +10,7 @@ spec:
      persistentVolumeClaim:
       claimName: mypvclaim
   containers:
-  - name: my-app
+  - name: mynginx
     image: nginx
     ports:
       - containerPort: 80
