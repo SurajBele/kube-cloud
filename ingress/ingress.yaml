@@ -26,9 +26,3 @@ spec:
             name: myapp-mobile-svc
             port: 
               number: 80
-
-
-
-
-/var/www/html/mobile/index.html
-/mobile
