@@ -7,6 +7,6 @@ subjects:
   name: suraj
   apiGroup: rbac.authorization.k8s.io
 roleRef:
-- kind: role    
+- kind: Role    
   name: myrole
   apiGroup: rbac.authorization.k8s.io
