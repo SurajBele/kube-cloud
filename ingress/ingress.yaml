@@ -16,11 +16,11 @@ spec:
             name: myapp-home-svc
             port: 
               number: 80
-  - host: mentore.mobile.com
+  - host: mentore.com/mobile
     http:
       paths:
       - pathType: Prefix
-        path: "/"
+        path: "/mobile"
         backend:
           service:
             name: myapp-mobile-svc
