@@ -14,9 +14,9 @@ spec:
     spec:
       containers:
       - name: myapp-home
-        image: httpd
+        image: surajbele/tomcat:java_base
         ports:
-        - containerPort: 80
+        - containerPort: 8080
 ---
 
 
