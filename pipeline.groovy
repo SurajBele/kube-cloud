@@ -4,6 +4,7 @@ pipeline {
         stage('pull') { 
             steps {
                 git branch: 'main', url: 'https://github.com/SurajBele/studentapp.ui.git'
+                 echo "pull successful" 
             }
         }
         stage('Build') { 
