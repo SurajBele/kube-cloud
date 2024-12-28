@@ -1,5 +1,7 @@
 pipeline {
-    agent any 
+    agent {
+        lables node1
+    }any 
     stages {
         stage('pull') { 
             steps {
@@ -8,6 +10,7 @@ pipeline {
         }
         stage('Build') { 
             steps {
+                sh 'mvn clean package'
                 echo "building successful" 
             }
         }
