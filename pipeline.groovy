@@ -13,21 +13,21 @@ pipeline {
                 echo "building successful" 
             }
         }
-        // stage('Test') { 
-        //     steps {
-        //         withSonarQubeEnv(installationName: 'sonar-server', credentialsId: 'sonar-token') {
-        //         sh 'mvn sonar:sonar -Dsonar.projectKey=myproject'
-        //         echo "testing is successful"
-        //         }
-        //     }
-        // }
-        // stage('quality gate') { 
-        //     steps {
+        stage('Test') { 
+            steps {
+                withSonarQubeEnv(installationName: 'sonar-server', credentialsId: 'sonar-token') {
+                sh 'mvn sonar:sonar -Dsonar.projectKey=student-app'
+                echo "testing is successful"
+                }
+            }
+        }
+        stage('quality gate') { 
+            steps {
                
-        //         waitForQualityGate abortPipeline: true
-        //         echo "gate is successful"
-        //     }
-        // }
+                waitForQualityGate abortPipeline: true
+                echo "gate is successful"
+            }
+        }
         stage('Deploy') { 
             steps {
                 echo "deploy is successful"
