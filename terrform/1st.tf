@@ -1,11 +1,9 @@
 terraform {
   backend "s3" {
-    bucket = "mybucket"
+    bucket = "aditya-1234"
     region = "us-east-1"
   }
 }
-
-
 
 provider "aws" {
   region = "us-east-1"
