@@ -1,3 +1,3 @@
 variable "vpc_cidr_block" {
-   default = 
+   default = "10.0.0.0/20"
 }
