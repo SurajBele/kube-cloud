@@ -1,3 +1,3 @@
-output "instance_" {
-  
+output "instance_ip" {
+  aws_instance
 }
