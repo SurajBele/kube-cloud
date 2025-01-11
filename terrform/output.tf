@@ -1,3 +1,3 @@
 output "instance_ip" {
-  aws_instance
+  aws_instance.
 }
