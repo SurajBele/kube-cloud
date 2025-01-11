@@ -19,6 +19,7 @@ resource "aws_instance" "myserver" {
       name = "suraj"
       env = "dev"
     }
+    
 }
 
 resource "aws_security_group" "my_sg" {
