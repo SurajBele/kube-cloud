@@ -1,3 +1,3 @@
-variable "ci" {
+variable "vpc_cidr_block" {
   
 }
