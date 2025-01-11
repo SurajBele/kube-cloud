@@ -23,9 +23,11 @@ resource "aws_instance" "myserver" {
 
 resource "aws_security_group" "my_sg" {
     name = "my_sg"
-    ingress = {}
+    ingress = {
         from_port = 80
         to_port = 
 
-     ]
+    }
+        
+
 }
