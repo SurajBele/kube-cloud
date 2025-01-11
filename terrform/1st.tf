@@ -29,13 +29,13 @@ resource "aws_security_group" "my_sg" {
         protocol = "TCP"
         from_port = 80
         to_port =  80
-        cidr = ["0.0.0.0/0", "32.25.12.100"]
+        cidr = var.s
 
     }
         
 }
 resource "aws_vpc" "mynetwork" {
-    cidr_block = var.
+    cidr_block = var.vpc_cidr_block
     tags = {
       name = "mynetwork"
       env = "dev"
