@@ -29,7 +29,7 @@ resource "aws_security_group" "my_sg" {
         protocol = "TCP"
         from_port = 80
         to_port =  80
-        cidr = var.s
+        cidr = var.
 
     }
         
