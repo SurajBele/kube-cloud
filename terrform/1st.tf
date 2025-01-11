@@ -22,5 +22,5 @@ resource "aws_instance" "myserver" {
 }
 
 resource "aws_security_group" "my_sg" {
-  
+    name = 
 }
