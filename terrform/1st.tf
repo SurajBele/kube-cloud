@@ -36,6 +36,6 @@ resource "aws_vpc" "mynetwork" {
     cidr_block = "10.0.0.0/20"
     tags = {
       name = "mynetwork"
-      env
+      env = 
     }
 }
