@@ -13,7 +13,6 @@ resource "aws_instance" "myserver" {
     ami = "ami-01816d07b1128cd2d"
     key_name = "id_rsa" 
     instance_type = "t2.micro"
-    vpc_id = aws_vpc.mynetwork.id
     vpc_security_group_ids = aws_security_group.my_sg.id
     availability_zone = "us-east-1a"
     tags = {
@@ -25,6 +24,7 @@ resource "aws_instance" "myserver" {
 
 resource "aws_security_group" "my_sg" {
     name = "my_sg"
+    vpc_id = aws_vpc.mynetwork.id
     ingress = {
         protocol = "TCP"
         from_port = 80
