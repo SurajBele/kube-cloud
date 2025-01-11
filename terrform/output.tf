@@ -1,3 +1,3 @@
 output "instance_ip" {
-  aws_instance.myserver
+  aws_instance.myserver.public_ip
 }
