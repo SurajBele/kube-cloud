@@ -35,7 +35,7 @@ resource "aws_security_group" "my_sg" {
         
 }
 resource "aws_vpc" "mynetwork" {
-    cidr_block = "10.0.0.0/20"
+    cidr_block = var.vpc_cidr_block
     tags = {
       name = "mynetwork"
       env = "dev"
