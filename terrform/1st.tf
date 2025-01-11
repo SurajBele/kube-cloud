@@ -21,3 +21,6 @@ resource "aws_instance" "myserver" {
     }
 }
 
+resource "" "name" {
+  
+}
