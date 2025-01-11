@@ -33,5 +33,5 @@ resource "aws_security_group" "my_sg" {
         
 }
 resource "aws_vpc" "mynetwork" {
-    cidr_block = 
+    cidr_block = 10.0.00
 }
