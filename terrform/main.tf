@@ -48,6 +48,6 @@ data "aws_security_groups" "mysg" {
    values = aws_vpc.id 
    } 
   filter {
-    name = ""
+    name = "groups name"
   }
 }
