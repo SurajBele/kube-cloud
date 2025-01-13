@@ -41,3 +41,5 @@ resource "aws_vpc" "mynetwork" {
       env = "dev"
     }
 }
+
+data "aws"
