@@ -49,6 +49,6 @@ data "aws_security_groups" "mysg" {
    } 
   filter {
     name = "group-name"
-  
+    values = [  ]
   }
 }
