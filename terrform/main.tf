@@ -44,6 +44,7 @@ resource "aws_vpc" "mynetwork" {
 
 data "aws_security_groups" "mysg" {
   filter {
-   vpc   
+   name = "vpc_id" 
+   values = vpc 
    } 
 }
