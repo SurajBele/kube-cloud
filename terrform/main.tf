@@ -42,4 +42,6 @@ resource "aws_vpc" "mynetwork" {
     }
 }
 
-data "aws_security_groups" ""
+data "aws_security_groups" "mysg" {
+  
+}
