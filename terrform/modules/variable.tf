@@ -13,4 +13,6 @@ variable "instance_type" {
 variable "project" {
     default = "moon_wars"
 }
-variable "env" {}
+variable "env" {
+    default = "avengers"
+}
