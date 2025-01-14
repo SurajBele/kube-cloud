@@ -1,3 +1,2 @@
-output "aws_instance" {
-  
-}
+output "aws_instance_id" {
+  value}
