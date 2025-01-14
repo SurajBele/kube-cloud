@@ -12,4 +12,5 @@ module "aws_instance" {
   source = "instance"
   ami_id = var.ami_id
   key_name = var.key_name
+  instance_
 }

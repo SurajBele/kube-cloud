@@ -5,7 +5,7 @@ variable "ami_id" {
     default = "ami-01816d07b1128cd2d"
 }
 variable "key_name" {
-    
+    default = "id_rsa"
 }
 variable "instance_type" {}
 variable "project" {}
