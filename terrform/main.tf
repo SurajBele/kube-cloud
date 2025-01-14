@@ -53,8 +53,3 @@
 #   }
 # }
 
-terraform{
-  backend {
-    bucket 
-  }
-}
