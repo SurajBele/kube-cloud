@@ -1,4 +1,2 @@
 variable "ami_id" {}
-variable "" {
-  
-}
+variable "key_name" {}
