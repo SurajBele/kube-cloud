@@ -9,5 +9,5 @@ provider "aws" {
 }
 
 module "aws_instance" {
-  
+  source = "value"
 }
