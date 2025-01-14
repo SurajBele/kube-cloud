@@ -58,4 +58,10 @@ resource "aws_security_group" "firewall" {
         to_port = 80
         cidr = ["0.0.0.0/0"]
     }
+    ingress = {
+        protocol = "TCP"
+        from_port = 80
+        to_port = 80
+        cidr = ["0.0.0.0/0"]
+    }
 }
