@@ -52,5 +52,7 @@ resource "aws_security_group" "firewall" {
       name = var.project
       env = var.env
     }
-    ingress = [  ]
+    ingress = {
+        protocol = 
+    }
 }
