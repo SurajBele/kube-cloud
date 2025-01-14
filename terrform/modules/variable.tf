@@ -7,6 +7,8 @@ variable "ami_id" {
 variable "key_name" {
     default = "id_rsa"
 }
-variable "instance_type" {}
+variable "instance_type" {
+    default = "t2.micro"
+}
 variable "project" {}
 variable "env" {}
