@@ -3,7 +3,6 @@ resource "aws_instance" "iron_man" {
     key_name = var.key_name
     instance_type = var.instance_type
     vpc_security_group_ids = aws_security_group.firewall.id
-    availability_zone = "us-east-1a"
     tags = {
       name = "suraj"
       env = "dev"
