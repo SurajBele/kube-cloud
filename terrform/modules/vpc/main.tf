@@ -7,5 +7,5 @@ resource "aws_vpc" "mynetwork" {
 }
 resource "aws_subnet" "pvt_subnet" {
   vpc_id = aws_vpc.mynetwork.id
-  subnet_cidr = 
+  cidr_block =  
 }
