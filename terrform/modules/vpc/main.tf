@@ -6,5 +6,5 @@ resource "aws_vpc" "mynetwork" {
     }
 }
 resource "aws_subnet" "pvt_subnet" {
-  
+  vpc_id = 
 }
