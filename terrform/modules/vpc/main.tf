@@ -24,8 +24,16 @@ resource "aws_subnet" "pub_subnet" {
 }
 resource "aws_internet_gateway" "my_igw" {
     vpc_id = aws_vpc.mynetwork.id
+    tags = {
+      name = var.project
+      env = var.env
+    }
 
 }
 resource "aws_route_table" "myroute" {
     vpc_id = aws_vpc.mynetwork.id
+    tags = {
+      name = var.project
+      env = var.env
+    }
 }
