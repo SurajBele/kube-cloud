@@ -22,6 +22,6 @@ resource "aws_subnet" "pub_subnet" {
     }
     map_public_ip_on_launch = true
 }
-resource "inter" "name" {
+resource "aws_internet_gateway" "myigw" {
   
 }
