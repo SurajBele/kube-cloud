@@ -37,7 +37,7 @@ resource "aws_route_table" "myroute" {
       env = var.env
     }
     route {
-    cidr_block = "10.0.1.0/24"
+    cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.example.id
   }
 }
