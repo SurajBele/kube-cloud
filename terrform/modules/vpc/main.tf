@@ -56,5 +56,6 @@ resource "aws_security_group" "firewall" {
         protocol = "TCP"
         from_port = 80
         to_port = 80
+        cidr = 
     }
 }
