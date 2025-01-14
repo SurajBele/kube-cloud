@@ -5,5 +5,5 @@ terraform {
   }
 }
 provider "aws" {
-  
+  region = 
 }
