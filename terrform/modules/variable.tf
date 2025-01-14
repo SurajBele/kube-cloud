@@ -17,8 +17,6 @@ variable "env" {
     default = "avengers"
 }
 variable "vpc_cidr" {
-    default = "0.0.0.0"
+    default = "10.0.0.0/20"
 }
-variable "project" {}
-variable "env" {}
 variable "subnet_cidr" {}
