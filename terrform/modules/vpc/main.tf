@@ -5,6 +5,6 @@ resource "aws_vpc" "mynetwork" {
       env = var.env
     }
 }
-resource "" "name" {
+resource "aws_sub" "name" {
   
 }
