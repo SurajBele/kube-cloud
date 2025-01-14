@@ -14,4 +14,5 @@ module "aws_instance" {
   key_name = var.key_name
   instance_type = var.instance_type
   project = var.project
+  env = 
 }
