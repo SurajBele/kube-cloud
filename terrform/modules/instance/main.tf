@@ -1,4 +1,5 @@
 resource "aws_instance" "iron_man" {
-    ami
+    ami =
+    key_name = 
   
 }
