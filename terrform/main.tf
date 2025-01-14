@@ -54,5 +54,7 @@
 # }
 
 terraform{
-  
+  backend {
+    bucket 
+  }
 }
