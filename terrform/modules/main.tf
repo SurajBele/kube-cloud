@@ -17,6 +17,8 @@ module "aws_instance" {
   env = var.env
 }
 module "myvpc" {
-  vpc_cidr = var.vpc
+
+  vpc_cidr = var.vpc_cidr
+
   
 }
