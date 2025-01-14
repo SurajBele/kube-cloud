@@ -17,7 +17,7 @@ variable "env" {
     default = "avengers"
 }
 variable "vpc_cidr" {
-    default = 
+    default = "0.0.0.0"
 }
 variable "project" {}
 variable "env" {}
