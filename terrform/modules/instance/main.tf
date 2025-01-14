@@ -1,3 +1,4 @@
-resource "aws_instance" "ironman" {
+resource "aws_instance" "iron_man" {
+    
   
 }
