@@ -19,4 +19,6 @@ variable "env" {
 variable "vpc_cidr" {
     default = "10.0.0.0/20"
 }
-variable "subnet_cidr" {}
+variable "pvt_subnet_cidr" {
+    default = 
+}
