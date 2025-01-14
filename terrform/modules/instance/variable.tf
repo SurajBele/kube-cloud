@@ -1,1 +1,2 @@
-vari
+variable "ami_id" {
+}
