@@ -10,5 +10,5 @@ provider "aws" {
 
 module "aws_instance" {
   source = "instance"
-  ami_id = 
+  ami_id = var.ami_id
 }
