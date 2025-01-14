@@ -53,6 +53,8 @@ resource "aws_security_group" "firewall" {
       env = var.env
     }
     ingress = {
-        protocol = 
+        protocol = "TCP"
+        from_port = 80
+        to_port = 80
     }
 }
