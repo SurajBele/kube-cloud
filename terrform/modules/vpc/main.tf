@@ -48,5 +48,9 @@ resource "aws_route_table_association" "route_subnet" {
 }
 resource "aws_security_group" "firewall" {
    vpc_id = aws_vpc.mynetwork.id
-   
+    tags = {
+      name = var.project
+      env = var.env
+    }
+    ingress = [  ]
 }
