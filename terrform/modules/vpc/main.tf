@@ -42,5 +42,5 @@ resource "aws_route_table" "myroute" {
   }
 }
 resource "aws_route_table_association" "route_subnet" {
-    subnet_id = 
+    subnet_id = aws_subnet.pub_subnet.id
 }
