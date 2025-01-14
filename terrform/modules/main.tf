@@ -16,3 +16,6 @@ module "aws_instance" {
   project = var.project
   env = var.env
 }
+module "myvpc" {
+  
+}
