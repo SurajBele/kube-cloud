@@ -20,6 +20,6 @@ module "myvpc" {
   source = "vpc"
   vpc_cidr = var.vpc_cidr
   pvt_subnet_cidr = var.pvt_subnet_cidr
-  pvt_subnet_cidr
+  pub_subnet_cidr = var.pub_subnet_cidr
   
 }
