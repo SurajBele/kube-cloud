@@ -70,6 +70,6 @@ resource "aws_security_group" "firewall" {
     protocol         = "-1"
     cidr_blocks      = ["0.0.0.0/0"]
 
-
+   }
    
 }
