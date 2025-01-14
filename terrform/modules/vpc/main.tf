@@ -46,3 +46,6 @@ resource "aws_route_table_association" "route_subnet" {
     route_table_id = aws_route_table.myroute.id
     
 }
+resource "" "name" {
+  
+}
