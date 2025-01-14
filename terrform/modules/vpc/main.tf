@@ -1,3 +1,3 @@
 resource "aws_vpc" "mynetwork" {
-    cidr = ""
+    cidr_block =  ""
 }
