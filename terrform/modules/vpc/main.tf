@@ -41,6 +41,6 @@ resource "aws_route_table" "myroute" {
     gateway_id = aws_internet_gateway.my_igw.id
   }
 }
-resource "aws_route" "name" {
+resource "aws_route_table_association" "" {
   
 }
