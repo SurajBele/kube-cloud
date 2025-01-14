@@ -8,6 +8,6 @@ provider "aws" {
   region = var.aws_region
 }
 
-module "name" {
+module "aws_instance" {
   
 }
