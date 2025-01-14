@@ -45,7 +45,7 @@ resource "aws_route_table_association" "route_subnet" {
     subnet_id = aws_subnet.pub_subnet.id
     route_table_id = aws_route_table.myroute.id
     tags = {
-      name = var.project
+    name = var.project
       env = var.env
     }
 }
