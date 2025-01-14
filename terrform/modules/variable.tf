@@ -4,7 +4,9 @@ variable "aws_region" {
 variable "ami_id" {
     default = "ami-01816d07b1128cd2d"
 }
-variable "key_name" {}
+variable "key_name" {
+    
+}
 variable "instance_type" {}
 variable "project" {}
 variable "env" {}
