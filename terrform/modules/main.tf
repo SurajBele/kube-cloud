@@ -52,8 +52,8 @@ module "aws_instance" {
   ami_id = var.ami_id
   key_name = var.key_name
   instance_type = var.instance_type
-  subnet_id = module.my_vpc_module.pub_subnet_id
-sg_ids = [aws_security_group.mysg.id]
+  subnet_id = module.myvpc.pub_subnet_id
+  sg_ids = [aws_security_group.mysg.id]
 
   project = var.project
   env = var.env
