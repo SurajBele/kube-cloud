@@ -2,7 +2,7 @@ resource "aws_instance" "iron_man" {
     ami = var.ami_id
     key_name = var.key_name
     instance_type = var.instance_type
-    subnet_id = module.vpc.aws_subnet.pub_subnet.id
+    subnet_id = aws_subnet.pub_subnet.id
     vpc_security_group_ids = [ "aws_security_group.firewall.id" ]
     
     tags = {
@@ -12,7 +12,7 @@ resource "aws_instance" "iron_man" {
     
 }
 resource "aws_security_group" "firewall" {
-   vpc_id = module.vpc.aws_vpc.mynetwork.id
+   vpc_id = aws_vpc.mynetwork.id
     ingress = {
        from_port = 80
        to_port = 80
