@@ -53,7 +53,7 @@ module "aws_instance" {
   ami_id = var.ami_id
   key_name = var.key_name
   instance_type = var.instance_type
-  vpc_security_group_ids = [ "aws_security_group.firewall.id" ]
+  
   project = var.project
   env = var.env
 }
