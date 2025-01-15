@@ -1,6 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "aditya-1234"
+    region = "value"
   }
 }
 provider "aws" {
