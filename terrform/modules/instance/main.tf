@@ -2,7 +2,7 @@ resource "aws_instance" "iron_man" {
     ami = var.ami_id
     key_name = var.key_name
     instance_type = var.instance_type
-    vpc_security_group_ids = []
+    vpc_security_group_ids = [ firewall ]
     tags = {
       name = var.project
       env = var.env
