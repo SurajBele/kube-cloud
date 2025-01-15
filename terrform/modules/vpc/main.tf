@@ -55,9 +55,9 @@ resource "aws_security_group" "firewall" {
         cidr = ["0.0.0.0/0"]
     }
     ingress {
-    protocol         = "TCP"
     from_port        = 22
     to_port          = 22
+    protocol         = "TCP"
     cidr_blocks      = ["0.0.0.0/0"]
   }
    egress {
