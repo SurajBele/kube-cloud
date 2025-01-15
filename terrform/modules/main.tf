@@ -13,7 +13,7 @@ module "aws_instance" {
   ami_id = var.ami_id
   key_name = var.key_name
   instance_type = var.instance_type
-  subnet_id = module.myvpc.aws_subnet.pub_subnet.id
+  
   project = var.project
   env = var.env
 }
