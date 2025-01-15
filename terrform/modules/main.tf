@@ -54,7 +54,7 @@ module "aws_instance" {
   key_name = var.key_name
   instance_type = var.instance_type
   sg_ids = [aws_security_groups.firewall.id]
-  subnet_id = module.myvpc.pub_subnet_id
+  subnet_id = module.myvpc.pub_subnet.id
   project = var.project
   env = var.env
 }
