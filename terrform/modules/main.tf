@@ -44,6 +44,7 @@ module "myvpc" {
   vpc_cidr = var.vpc_cidr
   pvt_subnet_cidr = var.pvt_subnet_cidr
   pub_subnet_cidr = var.pub_subnet_cidr
+  vpc_security_group_ids = 
   project = var.project
   env = var.env
 }
