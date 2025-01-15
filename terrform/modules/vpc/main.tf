@@ -8,6 +8,7 @@ resource "aws_vpc" "mynetwork" {
 resource "aws_subnet" "pvt_subnet" {
   vpc_id = aws_vpc.mynetwork.id
   cidr_block = var.pvt_subnet_cidr 
+  
   tags = {
       name = var.project
       env = var.env
