@@ -12,7 +12,7 @@ resource "aws_instance" "iron_man" {
     
 }
 resource "aws_security_group" "firewall" {
-   vpc_id = module.aws_vpc.mynetwork.id
+   vpc_id = module.vpc.aws_vpc.mynetwork.id
     ingress = {
        from_port = 80
        to_port = 80
