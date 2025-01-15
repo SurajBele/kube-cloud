@@ -69,6 +69,7 @@ resource "aws_security_group" "firewall" {
       cidr_blocks      = ["0.0.0.0/0"]
 
    }
+    vpc_id = aws_vpc.mynetwork.id
     tags = {
       name = var.project
       env = var.env
