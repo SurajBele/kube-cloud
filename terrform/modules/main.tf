@@ -53,7 +53,7 @@ module "aws_instance" {
   ami_id = var.ami_id
   key_name = var.key_name
   instance_type = var.instance_type
-  sg_id = 
+  sg_id = [aws]
   
   project = var.project
   env = var.env
