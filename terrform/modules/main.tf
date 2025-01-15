@@ -1,7 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "aws-module-bucket"
-    
+    bucket = "aditya-1234"
   }
 }
 provider "aws" {
