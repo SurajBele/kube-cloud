@@ -17,6 +17,7 @@ resource "aws_subnet" "pvt_subnet" {
 resource "aws_subnet" "pub_subnet" {
   vpc_id = aws_vpc.mynetwork.id
   cidr_block = var.pub_subnet_cidr 
+  map_public_ip_on_launch = true
   tags = {
       name = var.project
       env = var.env
