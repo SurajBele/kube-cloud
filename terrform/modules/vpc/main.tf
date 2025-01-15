@@ -49,9 +49,10 @@ resource "aws_route_table_association" "route_subnet" {
 resource "aws_security_group" "firewall" {
    vpc_id = aws_vpc.mynetwork.id
     ingress = {
-        protocol = "TCP"
+        
         from_port = 80
         to_port = 80
+        protocol = "TCP"
         cidr = ["0.0.0.0/0"]
     }
     ingress {
