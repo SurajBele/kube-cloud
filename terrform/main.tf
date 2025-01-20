@@ -1,14 +1,14 @@
-# terraform {
-#   backend "s3" {
-#     bucket = "aditya-1234"
-#     region = "us-east-1"
-#   }
-# }
+terraform {
+  backend "s3" {
+    bucket = "aditya-1234"
+    region = "us-east-1"
+  }
+}
 
-# provider "aws" {
-#   region = "us-east-1"
+provider "aws" {
+  region = "us-east-1"
   
-# }
+}
 resource "aws_instance" "myserver" {
     ami = "ami-01816d07b1128cd2d"
     key_name = "id_rsa" 
