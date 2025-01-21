@@ -1,0 +1,47 @@
+replicaCount: 3
+
+image:
+  repository: rabbitmq
+  tag: "3.11.10-management"
+  pullPolicy: IfNotPresent
+
+resources:
+  requests:
+    memory: "256Mi"
+    cpu: "500m"
+  limits:
+    memory: "512Mi"
+    cpu: "1"
+
+persistence:
+  enabled: true
+  storageClass: ""
+  accessMode: ReadWriteOnce
+  size: 10Gi
+
+service:
+  management:
+    type: LoadBalancer
+    port: 15672
+  amqp:
+    type: LoadBalancer
+    port: 5672
+
+rabbitmq:
+  adminUser: "admin"
+  adminPassword: "admin@123"
+  erlangCookie: "some-secret-cookie"
+
+livenessProbe:
+  httpGet:
+    path: /api/health/ready
+    port: management
+  initialDelaySeconds: 30
+  timeoutSeconds: 5
+
+readinessProbe:
+  httpGet:
+    path: /api/health/ready
+    port: management
+  initialDelaySeconds: 10
+  timeoutSeconds: 3
