@@ -3,3 +3,4 @@ name: rabbitmq
 version: 1.0.0
 description: A Helm chart for deploying RabbitMQ in a production-ready setup.
 appVersion: "3.11.10"
+icon: "https://www.rabbitmq.com/img/rabbitmq_logo_strap.png"
