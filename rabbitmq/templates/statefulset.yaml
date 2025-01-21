@@ -41,7 +41,7 @@ spec:
         - name: data
           mountPath: /var/lib/rabbitmq
         livenessProbe:
-          {{ .Values.livenessProbe | indent 10 }}
+          "{{ .Values.livenessProbe | indent 10 }}"
         readinessProbe:
           {{ .Values.readinessProbe | indent 10 }}
   volumeClaimTemplates:
