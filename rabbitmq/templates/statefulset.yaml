@@ -49,25 +49,3 @@ spec:
         requests:
           storage: {{ .Values.persistence.size }}
 ---
-apiVersion: v1
-kind: PersistentVolume
-metadata:
-  name: rabbitmq-pv
-spec:
-  capacity:
-    storage: 10Gi
-  accessModes:
-    - ReadWriteOnce
-  hostPath:
-    path: /mnt/data/rabbitmq
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: rabbitmq-pvc
-spec:
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 10Gi
