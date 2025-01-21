@@ -15,7 +15,7 @@ resources:
 
 persistence:
   enabled: true
-  storageClass: ""
+  storageClass: "gp2"
   accessMode: ReadWriteOnce
   size: 10Gi
 
