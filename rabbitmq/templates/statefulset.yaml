@@ -42,6 +42,6 @@ spec:
               name: rabbitmq-secret
               key: password
         volumeMounts:
-        - name: data
+        - name: rabbitmq-pv
           mountPath: /var/lib/rabbitmq
 
