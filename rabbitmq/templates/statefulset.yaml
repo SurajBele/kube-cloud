@@ -6,9 +6,9 @@ spec:
   serviceName: rabbitmq
   replicas: {{ .Values.replicaCount }}
   volumes:
-  - name: my-vol
+  - name: rabbitmq-pv
     persistentVolumeClaim:
-      claimName: mypvc
+      claimName: rabbitmq-pvc
   selector:
     matchLabels:
       app: rabbitmq
