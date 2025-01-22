@@ -2,7 +2,7 @@ replicaCount: 3
 
 image:
   repository: rabbitmq
-  tag: "3.11.10-management"
+  tag: "management-alpine"
   pullPolicy: IfNotPresent
 
 resources:
