@@ -8,10 +8,10 @@ image:
 resources:
   requests:
     memory: "256Mi"
-    cpu: "500m"
+    cpu: "250m"
   limits:
     memory: "512Mi"
-    cpu: "900m"
+    cpu: "500m"
 
 persistence:
   enabled: true
