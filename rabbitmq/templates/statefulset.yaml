@@ -44,20 +44,20 @@ spec:
       - name: rabbitmq-pv
         persistentVolumeClaim:
         claimName: rabbitmq-pvc
-  volumeClaimTemplates:
-  - metadata:
-      name: rabbitmq-pv
-    spec:
-      accessModes:
-      - ReadWriteOnce
-      resources:
-        requests:
-          storage: 10Gi
-      storageClassName: {{ .Values.persistence.storageClass }}
-      resources:
-        requests:
-          storage: 10Gi
-      storageClassName: {{ .Values.persistence.storageClass }}
+  # volumeClaimTemplates:
+  # - metadata:
+  #     name: rabbitmq-pv
+  #   spec:
+  #     accessModes:
+  #     - ReadWriteOnce
+  #     resources:
+  #       requests:
+  #         storage: 10Gi
+  #     storageClassName: {{ .Values.persistence.storageClass }}
+  #     resources:
+  #       requests:
+  #         storage: 10Gi
+  #     storageClassName: {{ .Values.persistence.storageClass }}
   tolerations:
   - key: "node.kubernetes.io/disk-pressure"
     operator: "Exists"
