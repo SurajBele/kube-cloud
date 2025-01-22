@@ -5,10 +5,6 @@ metadata:
 spec:
   serviceName: rabbitmq
   replicas: {{ .Values.replicaCount }}
-  volumes:
-  - name: rabbitmq-pv
-    persistentVolumeClaim:
-      claimName: rabbitmq-pvc
   selector:
     matchLabels:
       app: rabbitmq
