@@ -43,7 +43,7 @@ spec:
       volumes:
       - name: rabbitmq-pv
         persistentVolumeClaim:
-        claimName: rabbitmq-pvc
+          claimName: rabbitmq-pvc
   # volumeClaimTemplates:
   # - metadata:
   #     name: rabbitmq-pv
