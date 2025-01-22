@@ -53,7 +53,7 @@ spec:
       resources:
         requests:
           storage: 10Gi
-      storageClassName: {{ values.per}}
+      storageClassName: {{ values.persistence.storage}}
   tolerations:
   - key: "node.kubernetes.io/disk-pressure"
     operator: "Exists"
