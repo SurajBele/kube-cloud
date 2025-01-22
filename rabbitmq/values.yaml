@@ -29,7 +29,7 @@ service:
 rabbitmq:
   adminUser: "admin"
   adminPassword: "YWRtaW4tcGFzc3dvcmQ=" # Base64 encoded #"admin@123"
-  erlangCookie: "some-secret-cookie"
+  erlangCookie: "c29tZS1zZWNyZXQtY29va2ll" # Base64 encoded"some-secret-cookie"
 
 livenessProbe:
   httpGet:
