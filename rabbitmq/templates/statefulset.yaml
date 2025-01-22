@@ -46,7 +46,7 @@ spec:
         claimName: rabbitmq-pvc
   volumeClaimTemplates:
   - metadata:
-      name: rabbitmq-data
+      name: rabbitmq-pv
     spec:
       accessModes:
       - ReadWriteOnce
