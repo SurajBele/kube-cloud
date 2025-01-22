@@ -7,6 +7,7 @@ spec:
     storage: 10Gi
   accessModes:
     - ReadWriteOnce
+  storageClassName: gp2
   hostPath:
     path: /mnt/data/rabbitmq
 ---
