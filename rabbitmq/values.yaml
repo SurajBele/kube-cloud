@@ -11,7 +11,7 @@ resources:
     cpu: "500m"
   limits:
     memory: "512Mi"
-    cpu: "900"
+    cpu: "900m"
 
 persistence:
   enabled: true
