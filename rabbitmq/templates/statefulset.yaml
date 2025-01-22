@@ -41,9 +41,9 @@ spec:
         - name: rabbitmq-pv
           mountPath: /var/lib/rabbitmq
       volumes:
-  - name: rabbitmq-pv
-    persistentVolumeClaim:
-      claimName: rabbitmq-pvc
+      - name: rabbitmq-pv
+        persistentVolumeClaim:
+        claimName: rabbitmq-pvc
   tolerations:
   - key: "node.kubernetes.io/disk-pressure"
     operator: "Exists"
